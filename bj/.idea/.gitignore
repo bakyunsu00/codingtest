@@ -13,3 +13,8 @@ venv/
 # 'test.py' 파일을 무시
 test.py
 bj.iml
+.DS_Store
+.idea/
+bj/.idea/
+bj/.DS_Store
+bj/bj.iml
