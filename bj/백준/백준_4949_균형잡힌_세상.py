@@ -13,13 +13,13 @@ def validParen(sentences):
             elif char == "]" and len(parenStack) > 0 and parenStack[-1] == "[":
 
                 parenStack.pop()
-            elif char == "(" or char == "[":
+            elif char == "(" or char == "[" or char == ")" or char == "]":
                 parenStack.append(char)
         if not parenStack:
 
-            results.append("Yes")
+            results.append("yes")
         else:
-            results.append("No")
+            results.append("no")
     for _ in results:
         print(_)
 #입력 받아 하나씩 뽑기, .점으로 나눠서 리스트에 저장 후 뽑기
