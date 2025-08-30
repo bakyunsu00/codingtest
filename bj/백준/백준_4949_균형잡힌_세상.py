@@ -2,16 +2,16 @@ from collections import deque
 def validParen(sentences):
     # print(sentences)
     parenStack = deque()
-    # parenCount = 0
+
     results = []
     for sentence in sentences:
         parenStack.clear()
         for char in sentence:
             if char == ")" and len(parenStack) > 0 and parenStack[-1] == "(":
-                # parenCount = 1
+
                 parenStack.pop()
             elif char == "]" and len(parenStack) > 0 and parenStack[-1] == "[":
-                # parenCount = 1
+
                 parenStack.pop()
             elif char == "(" or char == "[":
                 parenStack.append(char)
